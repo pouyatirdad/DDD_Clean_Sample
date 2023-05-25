@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.Shared.Abstraction.Commands
 {
-	public interface ICommandHandler<TCommand> where TCommand :class, ICommand
+	public interface ICommandHandler<in TCommand> where TCommand :class, ICommand
 	{
 		Task HandlerAsync(TCommand command);
 	}
