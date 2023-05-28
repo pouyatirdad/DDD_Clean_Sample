@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Project.Domain.Factories;
 using Project.Domain.Policies;
-using Project.Shared;
+using Project.Shared.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Project.Application
 {
-	public static class Extensions
+    public static class Extensions
 	{
 		public static IServiceCollection AddApplication(this IServiceCollection services)
 		{
