@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.Application.Queries.Handlers
+namespace Project.Infrastructure.Queries.Handlers
 {
 	internal class SearchPackingListHandler : IQueryHandler<SearchPackingList, IEnumerable<PackingListDTO>>
 	{

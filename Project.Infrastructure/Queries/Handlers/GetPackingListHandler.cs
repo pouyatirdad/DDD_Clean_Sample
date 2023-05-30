@@ -1,4 +1,5 @@
 ﻿using Project.Application.DTO;
+using Project.Application.Queries;
 using Project.Domain.Repositories;
 using Project.Shared.Abstraction.Queries;
 using System;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.Application.Queries.Handlers
+namespace Project.Infrastructure.Queries.Handlers
 {
 	internal class GetPackingListHandler : IQueryHandler<GetPackingList, PackingListDTO>
 	{

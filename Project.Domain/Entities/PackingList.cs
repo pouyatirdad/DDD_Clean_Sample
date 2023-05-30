@@ -25,6 +25,11 @@ namespace Project.Domain.Entities
 			_packingItems = packingItems;
 		}
 
+		private PackingList()
+		{
+
+		}
+
 		internal PackingList(PackingListId id, PackingListName name, Localization localization)
 		{
 			Id = id;

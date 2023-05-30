@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project.Application.Queries
 {
-	internal class GetPackingList:IQuery<PackingListDTO>
+	public class GetPackingList:IQuery<PackingListDTO>
 	{
 		public Guid Id { get; set; }
 	}

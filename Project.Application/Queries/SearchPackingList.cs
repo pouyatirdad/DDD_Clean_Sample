@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project.Application.Queries
 {
-	internal class SearchPackingList:IQuery<IEnumerable<PackingListDTO>>
+	public class SearchPackingList:IQuery<IEnumerable<PackingListDTO>>
 	{
         public string SearchText { get; set; }
     }
