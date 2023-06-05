@@ -1,6 +1,8 @@
-﻿using Project.Application.DTO;
+﻿using Microsoft.EntityFrameworkCore;
+using Project.Application.DTO;
 using Project.Application.Queries;
-using Project.Domain.Repositories;
+using Project.Infrastructure.Ef.Contexts;
+using Project.Infrastructure.Ef.Models;
 using Project.Shared.Abstraction.Queries;
 using System;
 using System.Collections.Generic;
@@ -12,18 +14,20 @@ namespace Project.Infrastructure.Queries.Handlers
 {
 	internal class GetPackingListHandler : IQueryHandler<GetPackingList, PackingListDTO>
 	{
-		private readonly IpackingListRepository _repository;
 
-		public GetPackingListHandler(IpackingListRepository repository)
+		private readonly DbSet<PackingListReadModel> _packingLists;
+
+		public GetPackingListHandler(ReadDbContext context)
 		{
-			_repository = repository;
+			_packingLists = context.PackingLists;
 		}
 
-		public async Task<PackingListDTO> HandleAsync(GetPackingList query)
+		public Task<PackingListDTO> HandleAsync(GetPackingList query)
 		{
-			var packingList = await _repository.GetAsync(query.Id);
-
-			return packingList?.AsDTO();
+			return _packingLists.Include(x=>x.items).Where(x=>x.Id == query.Id)
+				.Select(x=> x.AsDTO())
+				.AsNoTracking()
+				.SingleOrDefaultAsync();
 		}
 	}
 }

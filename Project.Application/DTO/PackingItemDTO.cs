@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.Application.DTO
 {
-	internal class PackingItemDTO
+	public class PackingItemDTO
 	{
         public string Name { get; set; }
         public uint Quantity { get; set; }

@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Project.Application.DTO
 {
-	internal class PackingListDTO
+	public class PackingListDTO
 	{
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public Localization Localization { get; set; }
+        public LocalizationDto Localization { get; set; }
         public IEnumerable<PackingItemDTO> items { get; set; }
     }
 }

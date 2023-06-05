@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.Application.DTO
 {
-	internal class LocalizationDto
+	public class LocalizationDto
 	{
         public string City { get; set; }
         public string Country { get; set; }
