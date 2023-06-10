@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.Shared.Abstraction.Domain
 {
-	public class IDomainEvent
+	public interface IDomainEvent
 	{
 	}
 }
