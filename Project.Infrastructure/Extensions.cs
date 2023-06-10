@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Project.Application.Services;
 using Project.Infrastructure.Ef;
+using Project.Infrastructure.Services;
 using Project.Shared.Queries;
 
 namespace Project.Infrastructure
@@ -11,6 +13,7 @@ namespace Project.Infrastructure
 		{
 			services.AddPostgres(configuration);
 			services.AddQueries();
+			services.AddSingleton<IWeatherService, WeatherService>();
 
 			return services;
 		}
