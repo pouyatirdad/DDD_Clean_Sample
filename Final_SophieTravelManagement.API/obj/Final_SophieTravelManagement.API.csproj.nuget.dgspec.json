@@ -1,0 +1,447 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.API\\Final_SophieTravelManagement.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.API\\Final_SophieTravelManagement.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.API\\Final_SophieTravelManagement.API.csproj",
+        "projectName": "Final_SophieTravelManagement.API",
+        "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.API\\Final_SophieTravelManagement.API.csproj",
+        "packagesPath": "C:\\Users\\Pouya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Pouya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Application\\Final_SophieTravelManagement.Application.csproj": {
+                "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Application\\Final_SophieTravelManagement.Application.csproj"
+              },
+              "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Infrastructure\\Final_SophieTravelManagement.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Infrastructure\\Final_SophieTravelManagement.Infrastructure.csproj"
+              },
+              "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared.Abstractions\\Final_SophieTravelManagement.Shared.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared.Abstractions\\Final_SophieTravelManagement.Shared.Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Application\\Final_SophieTravelManagement.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Application\\Final_SophieTravelManagement.Application.csproj",
+        "projectName": "Final_SophieTravelManagement.Application",
+        "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Application\\Final_SophieTravelManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\Pouya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Pouya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Domain\\Final_SophieTravelManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Domain\\Final_SophieTravelManagement.Domain.csproj"
+              },
+              "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared\\Final_SophieTravelManagement.Shared.csproj": {
+                "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared\\Final_SophieTravelManagement.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Domain\\Final_SophieTravelManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Domain\\Final_SophieTravelManagement.Domain.csproj",
+        "projectName": "Final_SophieTravelManagement.Domain",
+        "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Domain\\Final_SophieTravelManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\Pouya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Pouya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared.Abstractions\\Final_SophieTravelManagement.Shared.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared.Abstractions\\Final_SophieTravelManagement.Shared.Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Infrastructure\\Final_SophieTravelManagement.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Infrastructure\\Final_SophieTravelManagement.Infrastructure.csproj",
+        "projectName": "Final_SophieTravelManagement.Infrastructure",
+        "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Infrastructure\\Final_SophieTravelManagement.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Pouya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Pouya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Application\\Final_SophieTravelManagement.Application.csproj": {
+                "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Application\\Final_SophieTravelManagement.Application.csproj"
+              },
+              "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Domain\\Final_SophieTravelManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Domain\\Final_SophieTravelManagement.Domain.csproj"
+              },
+              "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared\\Final_SophieTravelManagement.Shared.csproj": {
+                "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared\\Final_SophieTravelManagement.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared.Abstractions\\Final_SophieTravelManagement.Shared.Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared.Abstractions\\Final_SophieTravelManagement.Shared.Abstractions.csproj",
+        "projectName": "Final_SophieTravelManagement.Shared.Abstractions",
+        "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared.Abstractions\\Final_SophieTravelManagement.Shared.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\Pouya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared.Abstractions\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Pouya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared\\Final_SophieTravelManagement.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared\\Final_SophieTravelManagement.Shared.csproj",
+        "projectName": "Final_SophieTravelManagement.Shared",
+        "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared\\Final_SophieTravelManagement.Shared.csproj",
+        "packagesPath": "C:\\Users\\Pouya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Pouya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared.Abstractions\\Final_SophieTravelManagement.Shared.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\Pouya\\Desktop\\Sample\\Final_SophieTravelManagement.Shared.Abstractions\\Final_SophieTravelManagement.Shared.Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
