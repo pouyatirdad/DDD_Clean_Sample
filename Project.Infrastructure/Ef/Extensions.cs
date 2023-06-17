@@ -20,8 +20,8 @@ namespace Project.Infrastructure.Ef
 	{
 		public static IServiceCollection AddSql(this IServiceCollection services,IConfiguration configuration)
 		{
-			services.AddScoped<IpackingListRepository,PostgresPackingListRepository>();
-			services.AddScoped<IPackingListReadService,PostgresPackingListReadService>();
+			services.AddScoped<IPackingListRepository, PackingListRepository>();
+			services.AddScoped<IPackingListReadService,PackingListReadService>();
 
 
 			var options = configuration.GetOptions<DataBaseOptions>("DataBaseConnectionString");

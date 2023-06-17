@@ -12,9 +12,9 @@ namespace Project.Application.Commands.Handlers
 {
 	internal sealed class AddPackingItemHandler : ICommandHandler<AddPackingItem>
 	{
-		private readonly IpackingListRepository _repository;
+		private readonly IPackingListRepository _repository;
 
-		public AddPackingItemHandler(IpackingListRepository repository)
+		public AddPackingItemHandler(IPackingListRepository repository)
 		{
 			_repository = repository;
 		}

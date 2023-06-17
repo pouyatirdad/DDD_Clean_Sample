@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Project.Infrastructure.Ef.Services
 {
-	internal class PostgresPackingListReadService : IPackingListReadService
+	internal class PackingListReadService : IPackingListReadService
 	{
 		private readonly DbSet<PackingListReadModel> _packingLists;
 
-		public PostgresPackingListReadService(ReadDbContext context)
+		public PackingListReadService(ReadDbContext context)
 		{
 			_packingLists = context.PackingLists;
 		}

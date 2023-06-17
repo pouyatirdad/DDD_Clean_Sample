@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace Project.Infrastructure.Ef.Repositories
 {
-	internal class PostgresPackingListRepository : IpackingListRepository
+	internal sealed class PackingListRepository : IPackingListRepository
 	{
 		private readonly DbSet<PackingList> _packingLists;
 		private readonly WriteDbContext _writeDbContext;
 
-		public PostgresPackingListRepository(DbSet<PackingList> packingLists, WriteDbContext writeDbContext = null)
+		public PackingListRepository(DbSet<PackingList> packingLists, WriteDbContext writeDbContext = null)
 		{
 			_packingLists = writeDbContext.PackingLists;
 			_writeDbContext = writeDbContext;

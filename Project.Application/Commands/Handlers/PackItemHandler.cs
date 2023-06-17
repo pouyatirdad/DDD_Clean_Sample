@@ -13,9 +13,9 @@ namespace Project.Application.Commands.Handlers
 	internal sealed class PackItemHandler : ICommandHandler<PackItem>
 	{
 
-		private readonly IpackingListRepository _repository;
+		private readonly IPackingListRepository _repository;
 
-		public PackItemHandler(IpackingListRepository repository)
+		public PackItemHandler(IPackingListRepository repository)
 		{
 			_repository = repository;
 		}

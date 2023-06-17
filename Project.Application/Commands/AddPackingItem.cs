@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace Project.Application.Commands
 {
-	internal record AddPackingItem(Guid PackingListId,string Name,uint Qantity):ICommand;
+	public record AddPackingItem(Guid PackingListId,string Name,uint Qantity):ICommand;
 }

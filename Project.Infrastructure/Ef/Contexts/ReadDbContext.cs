@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Project.Infrastructure.Ef.Contexts
 {
-    internal sealed class ReadDbContext : DbContext
+    public class ReadDbContext : DbContext
     {
         public DbSet<PackingListReadModel> PackingLists { get; set; }
 

@@ -14,12 +14,12 @@ namespace Project.Application.Commands.Handlers
 {
 	public class CreatePackingListWithItemsHandler : ICommandHandler<CreatePackingListWithItems>
 	{
-		private readonly IpackingListRepository _repository;
+		private readonly IPackingListRepository _repository;
 		private readonly IPackingListFactory _factory;
 		private readonly IPackingListReadService _readService;
 		private readonly IWeatherService _weatherService;
 
-		public CreatePackingListWithItemsHandler(IpackingListRepository repository, IPackingListFactory factory, IPackingListReadService readService, IWeatherService weatherService)
+		public CreatePackingListWithItemsHandler(IPackingListRepository repository, IPackingListFactory factory, IPackingListReadService readService, IWeatherService weatherService)
 		{
 			_repository = repository;
 			_factory = factory;

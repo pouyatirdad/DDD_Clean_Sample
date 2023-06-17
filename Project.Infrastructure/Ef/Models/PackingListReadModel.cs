@@ -2,7 +2,7 @@
 
 namespace Project.Infrastructure.Ef.Models
 {
-	internal class PackingListReadModel
+	public class PackingListReadModel
 	{
         public Guid Id { get; set; }
         public int Version { get; set; }

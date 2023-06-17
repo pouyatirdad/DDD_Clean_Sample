@@ -12,9 +12,9 @@ namespace Project.Application.Commands.Handlers
 {
 	internal sealed class RemovePackItemHandler : ICommandHandler<RemovePackItem>
 	{
-		private readonly IpackingListRepository _repository;
+		private readonly IPackingListRepository _repository;
 
-		public RemovePackItemHandler(IpackingListRepository repository)
+		public RemovePackItemHandler(IPackingListRepository repository)
 		{
 			_repository = repository;
 		}

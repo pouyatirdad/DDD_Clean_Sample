@@ -27,7 +27,7 @@ namespace Project.Infrastructure.Ef.Queries.Handlers
 
             if (query.SearchText is not null)
             {
-                dbQuery = dbQuery.Where(x => EF.Functions.Like(x.Name, $"%{query.SearchText}%"));
+                dbQuery = dbQuery.Where(x => Microsoft.EntityFrameworkCore.EF.Functions.Like(x.Name, $"%{query.SearchText}%"));
             }
 
             return await dbQuery.Select(x => x.AsDTO()).AsNoTracking().ToListAsync();

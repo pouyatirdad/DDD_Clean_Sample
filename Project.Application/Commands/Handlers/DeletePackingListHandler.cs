@@ -11,9 +11,9 @@ namespace Project.Application.Commands.Handlers
 {
 	internal sealed class DeletePackingListHandler : ICommandHandler<DeletePackingList>
 	{
-		private readonly IpackingListRepository _repository;
+		private readonly IPackingListRepository _repository;
 
-		public DeletePackingListHandler(IpackingListRepository repository)
+		public DeletePackingListHandler(IPackingListRepository repository)
 		{
 			_repository = repository;
 		}

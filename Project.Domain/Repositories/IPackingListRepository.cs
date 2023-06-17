@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project.Domain.Repositories
 {
-	public interface IpackingListRepository
+	public interface IPackingListRepository
 	{
 		Task<PackingList> GetAsync(PackingListId id);
 		Task AddAsync(PackingList packingList);
