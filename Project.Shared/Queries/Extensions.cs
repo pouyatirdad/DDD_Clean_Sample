@@ -17,9 +17,9 @@ namespace Project.Shared.Queries
 
 			services.AddSingleton<IQueryDispatcher, InMemoryQueryDispatcher>();
 			services.Scan(s => s.FromAssemblies(assembly)
-			.AddClasses(c => c.AssignableTo(typeof(IQueryHandler<,>)))
-			.AsImplementedInterfaces()
-			.WithScopedLifetime());
+				.AddClasses(c => c.AssignableTo(typeof(IQueryHandler<,>)))
+				.AsImplementedInterfaces()
+				.WithScopedLifetime());
 
 			return services;
 		}

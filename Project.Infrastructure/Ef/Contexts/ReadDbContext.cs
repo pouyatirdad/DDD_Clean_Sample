@@ -31,7 +31,7 @@ namespace Project.Infrastructure.Ef.Contexts
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("packing");
+            modelBuilder.HasDefaultSchema("PackingLists");
 
             var configuration =new ReadConfiguration();
             modelBuilder.ApplyConfiguration<PackingListReadModel>(configuration);

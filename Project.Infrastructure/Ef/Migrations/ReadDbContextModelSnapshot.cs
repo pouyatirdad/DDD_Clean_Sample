@@ -17,7 +17,7 @@ namespace Project.Infrastructure.EF.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasDefaultSchema("packing")
+                .HasDefaultSchema("PackingLists")
                 .HasAnnotation("ProductVersion", "7.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
@@ -46,7 +46,7 @@ namespace Project.Infrastructure.EF.Migrations
 
                     b.HasIndex("PackingListId");
 
-                    b.ToTable("PackingItems", "packing");
+                    b.ToTable("PackingItems", "PackingLists");
                 });
 
             modelBuilder.Entity("Project.Infrastructure.Ef.Models.PackingListReadModel", b =>
@@ -68,7 +68,7 @@ namespace Project.Infrastructure.EF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PackingLists", "packing");
+                    b.ToTable("PackingLists", "PackingLists");
                 });
 
             modelBuilder.Entity("Project.Infrastructure.Ef.Models.PackingItemReadModel", b =>

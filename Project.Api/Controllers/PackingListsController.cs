@@ -6,7 +6,7 @@ using Project.Shared.Abstraction.Commands;
 using Project.Shared.Abstraction.Queries;
 using Project.Api.Controllers;
 
-namespace PackIT.Api.Controllers
+namespace Project.Api.Controllers
 {
 	public class PackingListsController : BaseController
 	{

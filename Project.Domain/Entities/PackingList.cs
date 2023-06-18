@@ -17,12 +17,12 @@ namespace Project.Domain.Entities
 		private PackingListName _name;
 		private Localization _localization;
 
-		private readonly LinkedList<PackingItem> _packingItems = new();
+		private readonly LinkedList<PackingItem> _items = new();
 
 		private PackingList(PackingListId id, PackingListName name, Localization localization, LinkedList<PackingItem> packingItems)
 			:this(id,name,localization)
 		{
-			_packingItems = packingItems;
+			_items = packingItems;
 		}
 
 		private PackingList()
@@ -39,14 +39,14 @@ namespace Project.Domain.Entities
 
 		public void AddItem(PackingItem item)
 		{
-			bool existitem = _packingItems.Any(x => x.Name == item.Name);
+			bool existitem = _items.Any(x => x.Name == item.Name);
 
 			if (existitem)
 			{
 				throw new PackingItemAlreadyExistsException(_name, item.Name);
 			}
 
-			_packingItems.AddLast(item);
+			_items.AddLast(item);
 			AddEvent(new PackingItemAdded(this, item));
 		}
 
@@ -63,20 +63,20 @@ namespace Project.Domain.Entities
 			var item = GetItem(itemName);
 			var packedItem = item with { IsPacked = true};
 
-			_packingItems.Find(item).Value=packedItem;
+			_items.Find(item).Value=packedItem;
 			AddEvent(new PackingItemPacked(this,item));
 		}
 
 		public void RemoveItem(string itemName)
 		{
 			var item = GetItem(itemName);
-			_packingItems.Remove(item);
+			_items.Remove(item);
 			AddEvent(new PackingItemRemoved(this,item));
 		}
 
 		private PackingItem GetItem(string itemName)
 		{
-			var item = _packingItems.SingleOrDefault(x => x.Name == itemName);
+			var item = _items.SingleOrDefault(x => x.Name == itemName);
 			if (item is null)
 			{
 				throw new PackingItemNotFoundException(itemName);

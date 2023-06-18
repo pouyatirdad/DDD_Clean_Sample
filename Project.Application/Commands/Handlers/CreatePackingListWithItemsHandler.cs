@@ -27,7 +27,7 @@ namespace Project.Application.Commands.Handlers
 			_weatherService = weatherService;
 		}
 
-		public async Task HandlerAsync(CreatePackingListWithItems command)
+		public async Task HandleAsync(CreatePackingListWithItems command)
 		{
 			var (id, name, days, gender, localizationWriteModel) = command;
 

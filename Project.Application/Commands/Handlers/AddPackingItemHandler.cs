@@ -19,7 +19,7 @@ namespace Project.Application.Commands.Handlers
 			_repository = repository;
 		}
 
-		public async Task HandlerAsync(AddPackingItem command)
+		public async Task HandleAsync(AddPackingItem command)
 		{
 			var packingList = await _repository.GetAsync(command.PackingListId);
 

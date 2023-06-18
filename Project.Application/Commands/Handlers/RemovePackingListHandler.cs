@@ -3,7 +3,7 @@ using Project.Application.Exceptions;
 using Project.Domain.Repositories;
 using Project.Shared.Abstraction.Commands;
 
-namespace PackIT.Application.Commands.Handlers
+namespace Project.Application.Commands.Handlers
 {
 	internal sealed class RemovePackingListHandler : ICommandHandler<RemovePackingList>
 	{
@@ -12,7 +12,7 @@ namespace PackIT.Application.Commands.Handlers
 		public RemovePackingListHandler(IPackingListRepository repository)
 			=> _repository = repository;
 
-		public async Task HandlerAsync(RemovePackingList command)
+		public async Task HandleAsync(RemovePackingList command)
 		{
 			var packingList = await _repository.GetAsync(command.Id);
 

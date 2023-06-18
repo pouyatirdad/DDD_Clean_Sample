@@ -16,7 +16,7 @@ namespace Project.Infrastructure.Ef.Repositories
 		private readonly DbSet<PackingList> _packingLists;
 		private readonly WriteDbContext _writeDbContext;
 
-		public PackingListRepository(DbSet<PackingList> packingLists, WriteDbContext writeDbContext = null)
+		public PackingListRepository(WriteDbContext writeDbContext)
 		{
 			_packingLists = writeDbContext.PackingLists;
 			_writeDbContext = writeDbContext;

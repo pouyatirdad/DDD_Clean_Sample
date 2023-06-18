@@ -15,7 +15,6 @@ namespace Project.Shared.Commands
             .AddClasses(c => c.AssignableTo(typeof(ICommandHandler<>)))
             .AsImplementedInterfaces()
             .WithScopedLifetime());
-
             return services;
         }
     }

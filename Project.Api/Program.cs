@@ -10,6 +10,7 @@ ConfigurationManager configuration = builder.Configuration;
 builder.Services.AddShared();
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(configuration);
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

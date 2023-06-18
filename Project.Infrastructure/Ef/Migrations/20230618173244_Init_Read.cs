@@ -12,11 +12,11 @@ namespace Project.Infrastructure.EF.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.EnsureSchema(
-                name: "packing");
+                name: "PackingLists");
 
             migrationBuilder.CreateTable(
                 name: "PackingLists",
-                schema: "packing",
+                schema: "PackingLists",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -31,7 +31,7 @@ namespace Project.Infrastructure.EF.Migrations
 
             migrationBuilder.CreateTable(
                 name: "PackingItems",
-                schema: "packing",
+                schema: "PackingLists",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -46,7 +46,7 @@ namespace Project.Infrastructure.EF.Migrations
                     table.ForeignKey(
                         name: "FK_PackingItems_PackingLists_PackingListId",
                         column: x => x.PackingListId,
-                        principalSchema: "packing",
+                        principalSchema: "PackingLists",
                         principalTable: "PackingLists",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -54,7 +54,7 @@ namespace Project.Infrastructure.EF.Migrations
 
             migrationBuilder.CreateIndex(
                 name: "IX_PackingItems_PackingListId",
-                schema: "packing",
+                schema: "PackingLists",
                 table: "PackingItems",
                 column: "PackingListId");
         }
@@ -64,11 +64,11 @@ namespace Project.Infrastructure.EF.Migrations
         {
             migrationBuilder.DropTable(
                 name: "PackingItems",
-                schema: "packing");
+                schema: "PackingLists");
 
             migrationBuilder.DropTable(
                 name: "PackingLists",
-                schema: "packing");
+                schema: "PackingLists");
         }
     }
 }
