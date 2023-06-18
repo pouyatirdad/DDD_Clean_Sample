@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace Project.Application.Commands
 {
-	internal record DeletePackingList(Guid Id) : ICommand;
+	public record TakeItem(Guid ListId, string Name) : ICommand;
 }

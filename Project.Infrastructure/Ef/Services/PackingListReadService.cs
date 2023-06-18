@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Project.Infrastructure.Ef.Services
 {
-	internal class PackingListReadService : IPackingListReadService
+	internal sealed class PackingListReadService : IPackingListReadService
 	{
 		private readonly DbSet<PackingListReadModel> _packingLists;
 

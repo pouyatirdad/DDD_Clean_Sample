@@ -20,9 +20,8 @@ namespace Project.Domain.Factories
 		}
 
 		public PackingList Create(PackingListId id, PackingListName name, Localization localization)
-		{
-			return new(id,name,localization);
-		}
+			=> new(id,name,localization);
+		
 
 		public PackingList CreateWithDefaultItems(PackingListId id, PackingListName name, TravelDays days, Gender gender, Temperature temperature, Localization localization)
 		{

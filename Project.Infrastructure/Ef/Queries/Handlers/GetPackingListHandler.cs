@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Project.Infrastructure.Ef.Queries.Handlers
 {
-    internal class GetPackingListHandler : IQueryHandler<GetPackingList, PackingListDTO>
+	internal sealed class GetPackingListHandler : IQueryHandler<GetPackingList, PackingListDTO>
     {
 
         private readonly DbSet<PackingListReadModel> _packingLists;

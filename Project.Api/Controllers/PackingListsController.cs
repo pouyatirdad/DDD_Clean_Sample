@@ -48,7 +48,7 @@ namespace PackIT.Api.Controllers
 		}
 
 		[HttpPut("{packingListId:guid}/items/{name}/pack")]
-		public async Task<IActionResult> Put([FromBody] PackItem command)
+		public async Task<IActionResult> Put([FromBody] TakeItem command)
 		{
 			await _commandDispatcher.DispatchAsync(command);
 			return Ok();

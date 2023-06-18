@@ -1,11 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Project.Shared.Abstraction.Commands;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Project.Shared.Abstraction.Commands;
+using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project.Shared.Commands
 {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.Infrastructure.Ef.Options
 {
-	internal class DataBaseOptions
+	public class DataBaseOptions
 	{
 		public string ConnectionString { get; set; }
 	}

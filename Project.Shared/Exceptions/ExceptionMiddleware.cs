@@ -1,11 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Project.Shared.Abstraction.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Project.Shared.Abstraction.Exceptions;
+using Microsoft.AspNetCore.Http;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace Project.Shared.Exceptions
 {

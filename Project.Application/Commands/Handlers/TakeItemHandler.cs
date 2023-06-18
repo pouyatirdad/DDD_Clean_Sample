@@ -9,25 +9,27 @@ using System.Threading.Tasks;
 
 namespace Project.Application.Commands.Handlers
 {
-	internal sealed class DeletePackingListHandler : ICommandHandler<DeletePackingList>
+	internal sealed class TakeItemHandler : ICommandHandler<TakeItem>
 	{
 		private readonly IPackingListRepository _repository;
 
-		public DeletePackingListHandler(IPackingListRepository repository)
+		public TakeItemHandler(IPackingListRepository repository)
 		{
 			_repository = repository;
 		}
 
-		public async Task HandlerAsync(DeletePackingList command)
+		public async Task HandlerAsync(TakeItem command)
 		{
-			var packingList = await _repository.GetAsync(command.Id);
+			var packingList = await _repository.GetAsync(command.ListId);
 
 			if (packingList is null)
 			{
 				throw new PackingListNullException();
 			}
 
-			await _repository.DeleteAsync(packingList);
+			packingList.PackItem(command.Name);
+
+			await _repository.UpdateAsync(packingList);
 		}
 	}
 }

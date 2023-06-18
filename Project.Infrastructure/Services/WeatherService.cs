@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Project.Infrastructure.Services
 {
-	internal class WeatherService : IWeatherService
+	internal sealed class WeatherService : IWeatherService
 	{
 		public Task<WeatherDTO> GetWeatherAsync(Localization localization)
 		{
