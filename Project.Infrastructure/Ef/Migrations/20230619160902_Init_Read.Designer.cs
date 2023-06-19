@@ -12,7 +12,7 @@ using Project.Infrastructure.Ef.Contexts;
 namespace Project.Infrastructure.EF.Migrations
 {
     [DbContext(typeof(ReadDbContext))]
-    [Migration("20230618173244_Init_Read")]
+    [Migration("20230619160902_Init_Read")]
     partial class Init_Read
     {
         /// <inheritdoc />
