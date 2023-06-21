@@ -2,7 +2,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using Project.Application.Services;
 using Project.Infrastructure.Ef;
+using Project.Infrastructure.Logging;
 using Project.Infrastructure.Services;
+using Project.Shared.Abstraction.Commands;
 using Project.Shared.Queries;
 
 namespace Project.Infrastructure
@@ -14,6 +16,8 @@ namespace Project.Infrastructure
 			services.AddSql(configuration);
 			services.AddQueries();
 			services.AddSingleton<IWeatherService, WeatherService>();
+
+			services.TryDecorate(typeof(ICommandHandler<>),typeof(LoggingCommandHandlerDecorator<>));
 
 			return services;
 		}
