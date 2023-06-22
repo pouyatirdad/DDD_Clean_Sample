@@ -5,17 +5,19 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{9FC7A5CE-1EB2-41E9-9487-A6D1A589B8B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Domain", "Project.Domain\Project.Domain.csproj", "{9E7C05BB-D115-4EDD-B215-66EE8C3B686D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Domain", "Project.Domain\Project.Domain.csproj", "{9E7C05BB-D115-4EDD-B215-66EE8C3B686D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Application", "Project.Application\Project.Application.csproj", "{DB6CBA9F-6D68-4DFE-84E5-F3F558E7C9E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Application", "Project.Application\Project.Application.csproj", "{DB6CBA9F-6D68-4DFE-84E5-F3F558E7C9E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Infrastructure", "Project.Infrastructure\Project.Infrastructure.csproj", "{1386A762-36C2-44C5-8FAD-57CB4D64CF96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Infrastructure", "Project.Infrastructure\Project.Infrastructure.csproj", "{1386A762-36C2-44C5-8FAD-57CB4D64CF96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Api", "Project.Api\Project.Api.csproj", "{ACB98AF6-1D5A-4A63-B5B4-B2A2FE596C8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Api", "Project.Api\Project.Api.csproj", "{ACB98AF6-1D5A-4A63-B5B4-B2A2FE596C8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Shared", "Project.Shared\Project.Shared.csproj", "{F865FCB5-7FEE-4936-8A4A-AA0A1DC52394}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Shared", "Project.Shared\Project.Shared.csproj", "{F865FCB5-7FEE-4936-8A4A-AA0A1DC52394}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Shared.Abstraction", "Project.Shared.Abstraction\Project.Shared.Abstraction.csproj", "{C85EC4F1-CD1B-42F2-B9C6-D2DBE38C475F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Shared.Abstraction", "Project.Shared.Abstraction\Project.Shared.Abstraction.csproj", "{C85EC4F1-CD1B-42F2-B9C6-D2DBE38C475F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Test", "Project.Test\Project.Test.csproj", "{701D2331-91B2-4D3B-AA15-93F5940A4E66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{C85EC4F1-CD1B-42F2-B9C6-D2DBE38C475F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C85EC4F1-CD1B-42F2-B9C6-D2DBE38C475F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C85EC4F1-CD1B-42F2-B9C6-D2DBE38C475F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{701D2331-91B2-4D3B-AA15-93F5940A4E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{701D2331-91B2-4D3B-AA15-93F5940A4E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{701D2331-91B2-4D3B-AA15-93F5940A4E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{701D2331-91B2-4D3B-AA15-93F5940A4E66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

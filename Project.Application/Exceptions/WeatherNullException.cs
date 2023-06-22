@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project.Application.Exceptions
 {
-	internal class WeatherNullException : PackitException
+	public class WeatherNullException : PackitException
 	{
 		public WeatherNullException() : base($"weather is null")
 		{

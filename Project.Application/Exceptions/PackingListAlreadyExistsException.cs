@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project.Application.Exceptions
 {
-	internal class PackingListAlreadyExistsException : PackitException
+	public class PackingListAlreadyExistsException : PackitException
 	{
 		public PackingListAlreadyExistsException(string name) : base($"packing list with name : {name} already exists")
 		{
